@@ -1,11 +1,23 @@
 <template>
     <div>
-        <a href="/">Pokemon List</a>
-        <a href="/id">Pokemon por id</a>
-        <a href="/about">About</a>
+        <router-link to="/">Pokemon List</router-link>
+        <router-link to="/id">Pokemon by id</router-link>
+        <router-link to="/about">About</router-link>
     </div>    
 </template>
 
 <style scoped>
+    div {
+        padding: 0 30px;
+    }
 
+    div a {
+        color: #2c3e50;
+        font-weight: bold;
+        margin: 0 10px;
+    }
+
+    a.router-link-exact-active {
+        color: #42b983;
+    }
 </style>
